@@ -33,6 +33,7 @@ const Suscriptores = ({ suscriptores, firestore }) => {
           <tr>
             <th>Nombre</th>
             <th>Carrera</th>
+            <th>Codigo</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -43,6 +44,7 @@ const Suscriptores = ({ suscriptores, firestore }) => {
                 {suscriptor.nombre} {suscriptor.apellido}
               </td>
               <td>{suscriptor.carrera}</td>
+              <td>{suscriptor.codigo}</td>
               <td>
                 <Link
                   className="btn btn-sm btn-info btn-block"
